@@ -33,14 +33,9 @@
         flag=3;
          
       }else if(flag==3){
-         Swal.fire({
-            title: 'EEEEEEH !!!',
-            text: 'Arrete de vouloir appuyer sur "non" C\'est pas gentil ! ',
-            imageUrl: 'https://file1.closermag.fr/var/closermag/storage/images/insolite/videos/grumpy-baby-le-bebe-grincheux-qui-fait-le-buzz-sur-la-toile-549663/4815558-1-fre-FR/Grumpy-baby-le-bebe-grincheux-qui-fait-le-buzz-sur-la-toile.png?alias=original',
-            imageWidth: 400,
-            imageAlt: 'Custom image',
-        })
-        
+        Bn.style.top=235 + 'px';
+        Bn.style.left=286 + 'px';
+        flag=4;        
       }else if(flag==4){
         Bn.style.top=235 + 'px';
         Bn.style.left=360 + 'px';
@@ -48,11 +43,12 @@
       }
     }
     function f2(){
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Il semblerait que cliquer sur "non" soit impossible... bizarre',
-            footer: 'Appelez Ilan pour resoudre ce problème'
+       Swal.fire({
+            title: 'EEEEEEH !!!',
+            text: 'Arrete de vouloir appuyer sur "non" C\'est pas gentil ! ',
+            imageUrl: 'https://file1.closermag.fr/var/closermag/storage/images/insolite/videos/grumpy-baby-le-bebe-grincheux-qui-fait-le-buzz-sur-la-toile-549663/4815558-1-fre-FR/Grumpy-baby-le-bebe-grincheux-qui-fait-le-buzz-sur-la-toile.png?alias=original',
+            imageWidth: 400,
+            imageAlt: 'Custom image',
         })
     }
   </script>
