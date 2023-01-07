@@ -7,7 +7,13 @@
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script type="text/javascript">
     function f1(){
-      alert("J'aurai pas ta réponse mdrrr alors envoie moi un message ;)") 
+        Swal.fire({
+            title: 'YEAAAAAAH !!!',
+            text: 'Envoie moi un message,ça aurait été trop long de le configurer pour qu\'il m\'en envoie un au "oui" de Chloé mdrr ',
+            imageUrl: 'https://scontent-cdg2-1.xx.fbcdn.net/v/t35.18174-12/14550698_1792993474316733_579351561_o.png?stp=dst-png&_nc_cat=104&ccb=1-7&_nc_sid=ae9488&_nc_ohc=fEGcLs6DxaAAX_YpL5t&_nc_ht=scontent-cdg2-1.xx&oh=00_AfBShdUW7IBaHao4iRDZnzm8Q6-FZcDFYV5LXY6k3LJ57g&oe=63BAF59E',
+            imageWidth: 400,
+            imageAlt: 'Custom image',
+    })
     } 
     var flag=1;
     function f(){ 
@@ -26,7 +32,14 @@
         Bn.style.left=sJs2+'px';
         flag=3;
       }else if(flag==3){
-        alert('EEEEEEH ! arrete de vouloir appuyer sur non C\'est pas gentil !')
+        Swal.fire({
+            title: 'EEEEEEH !!!',
+            text: 'Arrete de vouloir appuyer sur "non" C\'est pas gentil ! ',
+            imageUrl: 'https://file1.closermag.fr/var/closermag/storage/images/insolite/videos/grumpy-baby-le-bebe-grincheux-qui-fait-le-buzz-sur-la-toile-549663/4815558-1-fre-FR/Grumpy-baby-le-bebe-grincheux-qui-fait-le-buzz-sur-la-toile.png?alias=original',
+            imageWidth: 400,
+            imageAlt: 'Custom image',
+        })
+        
       Bn.style.top=235 + 'px';
         Bn.style.left=286 + 'px';
         flag=4;
@@ -40,8 +53,8 @@
         Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Erreur lors du clic!',
-            footer: '<a href="">Appelez Ilan pour resoudre ce problème</a>'
+            text: 'Il semblerait que cliquer sur "non" soit impossible... bizarre',
+            footer: 'Appelez Ilan pour resoudre ce problème'
         })
     }
   </script>
@@ -79,6 +92,7 @@ input{
     display: flex;
     margin: 5%;
     background-color: aliceblue;
+    padding: 0.5%;
 }
 </style>
  
